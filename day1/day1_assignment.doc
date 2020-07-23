@@ -1,17 +1,45 @@
-Question 1 : 
-Explore and explain the various methods in console function Explain them Ex. console.log() console.warn(). etc... 
+Day 1 Assignment
 
-
-
-
-
-
-Question 2 :
-Write the difference between var, let and const with code examples. 
-
-
-
-
-
-Question 3 : 
-Write a brief intro on available data types in Javascript.
+1. Various methods in console function.
+       * Alert , prompt, confirm
+       Alert- It is a modal pop-up and doesn't allows you to interact with webpage unless you    interact with the pop-up.
+      //alert(" hey are you there?");
+      //Prompt - before closing some webpage we get the dialog box.
+ let name= prompt ( " what is your name" , " Ram");
+  console.log(name);
+//confirm
+  Let age=confirm (" Are you below 18?");
+  //Ok - true
+  //Cancel - false
+  //return values:
+  console.log(age);
+  
+  
+  
+2. Difference between var, const, let
+      VAR: By using const we can assign a variable. 
+                It can be updated and re- declared within a scope.
+                 It is a function scope
+    Const: It is a block scope.
+                It is similar to that of let, the only difference is you cannot reassign it to a new value.
+                It cannot be updated and re- declared.
+        let: It can be defined within curly brackets{ }.
+               The variables declared with let can be reassigned.
+                It is also a block scope.
+                
+                
+                
+3. Datatypes in js.
+        * Primitive
+        * Reference
+Primitive
+      ∆Number
+      ∆  String
+      ∆  Boolean
+      ∆ signint
+      ∆ null
+      ∆   undefined
+Reference
+      ∆   Array
+      ∆  Functions
+      ∆   Objects
