@@ -1,0 +1,57 @@
+Question 1:
+Write a program which does the following things:1. Takes a positive number from the user.
+2. Makes an array of numbers till the number given by user
+3. Use higher order function to filter the odd numbers
+4. Generate and array of the cubes of the filtered numbers
+
+
+var inputArray = [ ];
+var size = 5; 
+//Maximum Array size
+
+for(var i=0; i<size; i++)
+ {
+	
+	//Taking Input from user
+	inputArray[i] = prompt('Enter Element ' + (i+1));
+}
+
+//Print the array in the console.
+console.log(inputArray);
+
+const countBy = (arr, fn) => arr.reduce((acc, num) => {
+  const prop = fn(num);
+  acc[prop] = (acc[prop] || 0) + 1;
+  return acc;
+}, {});
+
+function evenOdd(n) {
+  if (n % 2 =! 0) return "odd";
+  else return "even";
+}
+var nums = [1, 2, 3, 4, 5];
+console.log(countBy(nums, evenOdd))
+
+
+<script> 
+
+    // JavaScript to illustrate filter() method 
+
+    function isEven(value) { 
+
+        return value % 2 == 0; 
+
+    } 
+
+  
+
+    function func() { 
+
+        var filtered = [odd].filter(isEven); 
+
+        document.write(filtered); 
+
+    } 
+
+    func(); 
+</script>
